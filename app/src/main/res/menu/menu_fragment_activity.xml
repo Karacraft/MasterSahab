@@ -1,0 +1,43 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/menu_sync"
+        android:title="@string/title_menu_sync"
+        android:orderInCategory="1"
+        android:icon="@drawable/stat_notify_sync"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"
+        />
+
+    <item
+        android:id="@+id/menu_login"
+        android:title="@string/title_menu_login"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_menu_login"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"
+        />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/title_menu_logout"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_menu_logout"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"
+        />
+
+    <item
+        android:id="@+id/menu_quit"
+        android:title="@string/title_menu_quit"
+        android:orderInCategory="5"
+        android:icon="@drawable/ic_menu_quit"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"
+        />
+
+
+</menu>

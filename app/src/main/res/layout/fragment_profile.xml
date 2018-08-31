@@ -1,0 +1,118 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.karacraft.data.Dashboard_Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView_profilePicture"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/akms_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tv_profileName"
+        android:layout_width="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_profilePicture"
+        android:text="@string/fragment_profile_name"
+        />
+
+    <TextView
+        android:id="@+id/textView_fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_profilePicture"
+        android:layout_toRightOf="@+id/tv_profileName"
+        android:textColor="@color/myorange"
+        android:layout_weight="0"
+        android:text="@string/fragment_profile_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_profileUserID"
+        android:layout_width="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_profile_userid"
+        android:layout_below="@id/tv_profileName"
+        />
+
+    <TextView
+        android:id="@+id/textView_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_profileName"
+        android:layout_toRightOf="@id/tv_profileUserID"
+        android:textColor="@color/mygreen"
+        android:text="@string/fragment_profile_userid"
+        />
+
+    <TextView
+        android:id="@+id/tv_profileDesignation"
+        android:layout_width="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_profile_designation"
+        android:layout_below="@id/tv_profileUserID"
+        />
+
+    <TextView
+        android:id="@+id/textView_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_profile_designation"
+        android:layout_below="@id/tv_profileUserID"
+        android:layout_toRightOf="@id/tv_profileDesignation"
+        android:textColor="@color/mywhite"
+        />
+
+    <TextView
+        android:id="@+id/tv_profileId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/fragment_profile_id"
+        android:layout_below="@id/tv_profileDesignation"
+        />
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_profile_id"
+        android:layout_below="@id/tv_profileDesignation"
+        android:layout_toRightOf="@id/tv_profileId"
+        />
+
+    <TextView
+        android:id="@+id/tv_profileCity"
+        android:layout_width="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_profile_city"
+        android:layout_below="@id/tv_profileId"
+        />
+
+    <TextView
+        android:id="@+id/textView_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_profile_city"
+        android:layout_below="@id/tv_profileId"
+        android:layout_toRightOf="@id/tv_profileId"
+        />
+
+</RelativeLayout>

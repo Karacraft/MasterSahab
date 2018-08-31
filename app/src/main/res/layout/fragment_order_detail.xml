@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/Layout_Relative_OrderDetails"
+    tools:context="com.karacraft.data.Order_Details">
+
+    <TextView
+        android:id="@+id/tv_listOrderCardNumber"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+    <TextView
+        android:id="@+id/textView_listOrderDetailCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/mygreen"
+        android:layout_toRightOf="@id/tv_listOrderCardNumber"
+        android:text="Card Number"
+        />
+
+    <TextView
+        android:id="@+id/tv_listOrderDetailDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Order Date"
+        android:layout_below="@+id/tv_listOrderCardNumber"
+        />
+    <TextView
+        android:id="@+id/textView_orderDetailPlacementDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_listOrderDetailDate"
+        android:text="Order Date"
+        android:layout_below="@+id/textView_listOrderDetailCardNumber"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailSuitQty"
+        android:layout_below="@+id/tv_listOrderDetailDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Suit Qty"
+        />
+
+    <TextView
+        android:id="@+id/editView_orderDetailAddEditSuitQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_orderDetailPlacementDate"
+        android:layout_toRightOf="@+id/tv_orderDetailSuitQty"
+        android:text="Suit Qty"
+        />
+
+    <TextView
+        android:id="@+id/tv_listOrderDetailSuitCode"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editView_orderDetailAddEditSuitQty"
+        android:text="Suit Code"
+        />
+
+    <TextView
+        android:id="@+id/textView_listOrderDetailSuitCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myorange"
+        android:layout_below="@+id/editView_orderDetailAddEditSuitQty"
+        android:layout_toRightOf="@+id/tv_listOrderDetailSuitCode"
+        android:text="Suit Code"
+        />
+
+    <TextView
+        android:id="@+id/tv_listOrderDetailCity"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_listOrderDetailSuitCode"
+        android:text="City"
+        />
+
+    <TextView
+        android:id="@+id/textView_orderDetailCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_listOrderDetailSuitCode"
+        android:layout_toRightOf="@+id/tv_listOrderDetailCity"
+        android:text="City"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailSuitPrice"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_listOrderDetailCity"
+        android:text="Price"
+        />
+    <TextView
+        android:id="@+id/textView_orderDetailSuitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myred"
+        android:layout_toRightOf="@id/tv_orderDetailSuitPrice"
+        android:layout_below="@+id/tv_listOrderDetailCity"
+        android:text="Price"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailSuitColor"
+        android:text="Suit Color"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_orderDetailSuitPrice"
+        />
+    <TextView
+        android:id="@+id/textView_orderDetailSuitColor"
+        android:text="Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_orderDetailSuitColor"
+        android:layout_below="@id/textView_orderDetailSuitPrice"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailStats"
+        android:text="Order Status"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_orderDetailSuitColor"
+        />
+    <TextView
+        android:id="@+id/textView_listOrderDetailSuitStatus"
+        android:text="Status"
+        android:textColor="@color/myred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_orderDetailStats"
+        android:layout_below="@id/textView_orderDetailSuitColor"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailStatusChangeDate"
+        android:text="Change Date"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_listOrderDetailSuitStatus"
+        />
+    <TextView
+        android:id="@+id/textView_orderDetailStatusChangeDate"
+        android:text="Change Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_orderDetailStatusChangeDate"
+        android:layout_below="@id/textView_listOrderDetailSuitStatus"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailDiscPrice"
+        android:text="Discount Price"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_orderDetailStatusChangeDate"
+        />
+    <TextView
+        android:id="@+id/textView_orderDetailDiscPrice"
+        android:text="Disc Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myorange"
+        android:layout_toRightOf="@id/tv_orderDetailDiscPrice"
+        android:layout_below="@id/textView_orderDetailStatusChangeDate"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailReceipt"
+        android:text="Receipt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_orderDetailDiscPrice"
+        />
+    <TextView
+        android:id="@+id/textView_orderDetailReceipt"
+        android:text="Receipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mywhite"
+        android:layout_toRightOf="@id/tv_orderDetailReceipt"
+        android:layout_below="@id/textView_orderDetailDiscPrice"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailCatalog"
+        android:text="Catalog"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_orderDetailReceipt"
+        />
+    <TextView
+        android:id="@+id/textView_orderDetailCatalog"
+        android:text="Catalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_orderDetailCatalog"
+        android:layout_below="@id/textView_orderDetailReceipt"
+        />
+
+
+</RelativeLayout>

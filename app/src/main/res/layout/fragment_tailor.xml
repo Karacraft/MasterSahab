@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.karacraft.data.Tailor_Details">
+
+    <ImageView
+        android:id="@+id/imageView_tailorDetail"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@drawable/akms_icon"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/tv_tailorDetailsName"
+        android:layout_width="120dp "
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_name"
+        android:layout_below="@+id/imageView_tailorDetail"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_tailorDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_tailorDetailsName"
+        android:layout_below="@+id/imageView_tailorDetail"
+        android:textColor="@color/mywhite" />
+
+    <TextView
+        android:id="@+id/tv_tailorDetailsShop"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_shop"
+        android:layout_below="@id/tv_tailorDetailsName"
+
+        />
+
+    <TextView
+        android:id="@+id/textView_tailorDetailShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_shop"
+        android:layout_below="@id/tv_tailorDetailsName"
+        android:layout_toRightOf="@id/tv_tailorDetailsShop"
+        android:textColor="@color/mywhite" />
+
+    <TextView
+        android:id="@+id/tv_tailorDetailsCardNumber"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_card"
+        android:layout_below="@id/textView_tailorDetailShop"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textView_tailorDetailCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_card"
+        android:layout_below="@id/textView_tailorDetailShop"
+        android:layout_toRightOf="@id/tv_tailorDetailsCardNumber"
+        android:textColor="@color/mygreen" />
+
+    <TextView
+        android:id="@+id/tv_tailorDetailsPoints"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_points"
+        android:layout_below="@id/tv_tailorDetailsCardNumber"
+        />
+
+    <TextView
+        android:id="@+id/textView_tailorDetailPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_pointsActual"
+        android:layout_below="@id/textView_tailorDetailCard"
+        android:layout_toRightOf="@id/tv_tailorDetailsPoints"
+        android:textColor="@color/myred" />
+
+    <TextView
+        android:id="@+id/tv_tailorDetailsCity"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_city"
+        android:layout_below="@id/tv_tailorDetailsPoints"
+        />
+
+    <TextView
+        android:id="@+id/textView_tailorDetailCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_city"
+        android:layout_below="@id/tv_tailorDetailsPoints"
+        android:layout_toRightOf="@id/tv_tailorDetailsCity"
+        />
+
+    <TextView
+        android:id="@+id/tv_tailorDetailsContact"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_contact"
+        android:layout_below="@id/tv_tailorDetailsCity"
+        />
+
+    <TextView
+        android:id="@+id/textView_tailorDetailContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_contact"
+        android:layout_below="@id/tv_tailorDetailsCity"
+        android:layout_toRightOf="@id/tv_tailorDetailsContact"
+        />
+
+    <TextView
+        android:id="@+id/tv_tailorDetailsCnic"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_cnic"
+        android:layout_below="@id/tv_tailorDetailsContact"
+        />
+
+    <TextView
+        android:id="@+id/textView_tailorDetailCnic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_cnic"
+        android:layout_below="@id/tv_tailorDetailsContact"
+        android:layout_toRightOf="@id/tv_tailorDetailsCnic"
+        />
+
+    <TextView
+        android:id="@+id/tv_tailorDetailsAddress"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_address"
+        android:layout_below="@id/tv_tailorDetailsCnic"
+        />
+
+    <TextView
+        android:id="@+id/textView_tailorDetailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_tailor_address"
+        android:singleLine="false"
+        android:layout_below="@id/tv_tailorDetailsCnic"
+        android:layout_toRightOf="@id/tv_tailorDetailsAddress"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_tailorDetailAddress"
+        >
+        <!--
+        <Button
+            android:id="@+id/button_addMerchandise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_tailor_buttonAddMerch"
+            android:layout_below="@id/tv_tailorDetailsAddress"
+            />
+        <Button
+            android:id="@+id/button_addOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_tailor_buttonAddOrder"
+            android:layout_below="@+id/button_addMerchandise"
+            />
+
+        <Button
+            android:id="@+id/button_viewMerchandise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_tailor_buttonViewMerch"
+            android:layout_below="@+id/button_addOrder"
+            />
+
+        <Button
+            android:id="@+id/button_viewPendingOrders"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_tailor_buttonViewPendindOrder"
+            android:layout_below="@+id/button_viewMerchandise"
+            />
+
+        <Button
+            android:id="@+id/button_viewAllOrders"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_tailor_buttonAllOrders"
+            android:layout_below="@+id/button_viewPendingOrders"
+            />
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

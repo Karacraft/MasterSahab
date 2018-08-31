@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Master Sahab</string>
+
+    <!--            Menu System                 -->
+    <string name="title_menu_sync">Sync</string>
+    <string name="title_menu_login">Login</string>
+    <string name="title_menu_profile">Profile</string>
+    <string name="title_menu_logout">Logout</string>
+    <string name="title_menu_quit">Quit</string>
+
+    <!--            Order Menu System                 -->
+    <string name="title_order_menu_add">Add</string>
+    <string name="title_order_menu_edit">Edit</string>
+    <string name="title_order_menu_delete">Delete</string>
+
+    <!--            LoginFragment        -->
+    <string name="login_username">Username</string>
+    <string name="login_username_hint">Your User Name</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_hint">Your Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_button_cancel">Cancel</string>
+
+    <!--            Various Texts               -->
+    <string name="nouser_logged_in">No User Logged.</string>
+
+    <!--            Titles                          -->
+    <string name="title_activity">Dashboard</string>
+    <string name="profile_activity">My Profile</string>
+    <string name="items_activity">Items</string>
+    <string name="login_activity">Login</string>
+    <string name="orders_list_activity">Orders</string>
+    <string name="tailors_list_activity">Tailors</string>
+    <string name="suits_list_activity">Suits</string>
+    <string name="merc_list_activity">Merchandise</string>
+
+    <string name="tailor_fragment">Tailor Profile</string>
+    <string name="order_fragment">Order Data</string>
+    <string name="order_detail_fragment">Order Details</string>
+
+    <!--            list_item_tailors       -->
+    <string name="list_item_tailor_name">Tailor Name</string>
+    <string name="list_item_tailor_contact">Contact #</string>
+    <string name="list_item_tailor_shop">Shop Name</string>
+    <string name="list_item_tailor_cardnumber">Card Number</string>
+    <string name="list_item_tailor_empty">No Record Found</string>
+
+    <!--            list_item_tailors       -->
+    <string name="list_item_order_empty">No Record Found</string>
+
+    <!--            list_item_suits         -->
+    <string name="list_item_suit_code">Code</string>
+    <string name="list_item_suit_catalog">Catalog</string>
+    <string name="list_item_suit_price">Price</string>
+    <string name="list_item_suit_colorType">Color / Type</string>
+    <string name="list_item_suit_description">Description</string>
+    <string name="list_item_suit_empty">No Record Found</string>
+
+    <!--        fragment_tailors_list       -->
+    <string name="tailors_list_hint">Name or Card Number</string>
+
+    <!--        fragment_tailor     -->
+    <string name="fragment_tailor_name">Name</string>
+    <string name="fragment_tailor_shop">Shop</string>
+    <string name="fragment_tailor_card">Card</string>
+    <string name="fragment_tailor_points">Points</string>
+    <string name="fragment_tailor_pointsActual">Points N/A</string>
+    <string name="fragment_tailor_city">City</string>
+    <string name="fragment_tailor_contact">Contact</string>
+    <string name="fragment_tailor_cnic">C.N.I.C</string>
+    <string name="fragment_tailor_address">Address</string>
+    <string name="fragment_tailor_buttonAddMerch">Add Merchandise</string>
+    <string name="fragment_tailor_buttonAddOrder">Add Order</string>
+    <string name="fragment_tailor_buttonViewMerch">View Merchandise</string>
+    <string name="fragment_tailor_buttonViewPendindOrder">Pending Orders</string>
+    <string name="fragment_tailor_buttonAllOrders">Archive Orders</string>
+
+    <!--        fragment_suits_list       -->
+    <string name="suits_list_hint">Code e.g AKL2320</string>
+
+    <!--        fragment_item          -->
+
+    <!--        fragment_profile        -->
+    <string name="fragment_profile_name">User Name</string>
+    <string name="fragment_profile_userid">User Id</string>
+    <string name="fragment_profile_designation">Role</string>
+    <string name="fragment_profile_id">Identity #</string>
+    <string name="fragment_profile_city">City</string>
+
+    <!--        fragment_orders_list        -->
+    <string name="orders_list_hint">Card Number or AKL2321</string>
+
+    <!--  activity_Dashboard -->
+    <string name="btn_tailors">Tailors</string>
+    <string name="btn_suits">Suits</string>
+    <string name="btn_orders">Orders</string>
+    <string name="btn_items">Items</string>
+    <string name="btn_merc">Merchandise</string>
+
+    <!--  Authenticator -->
+    <string name="accountType">com.karacraft.mastersahab</string>
+    <string name="lable">Master Sahab</string>
+    <!-- SyncAdapter -->
+    <string name="contentAuthority">com.karacraft.security.mastersahab</string>
+
+
+</resources>

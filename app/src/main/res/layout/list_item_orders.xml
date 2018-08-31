@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.karacraft.data.Orders_ListActivity">
+
+    <TextView
+        android:id="@+id/textView_listOrderDetailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tailor Id"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/myorange"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_listOrderCity"
+        android:text="CITY"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_listOrderCardNumber"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_listOrderDetailId"
+        android:text="Card Number"
+        />
+    <TextView
+        android:id="@+id/textView_listOrderDetailCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mygreen"
+        android:text="Card Number"
+        android:layout_toRightOf="@id/tv_listOrderCardNumber"
+        android:layout_below="@+id/textView_listOrderDetailId"
+        />
+
+    <TextView
+        android:id="@+id/tv_listOrderDetailSuitCode"
+        android:layout_below="@+id/textView_listOrderDetailCardNumber"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Suit Code"
+        />
+
+    <TextView
+        android:id="@+id/textView_listOrderDetailSuitCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mywhite"
+        android:layout_below="@+id/textView_listOrderDetailCardNumber"
+        android:layout_toRightOf="@+id/tv_listOrderDetailSuitCode"
+        android:text="Suit Code"
+        />
+
+    <TextView
+        android:id="@+id/tv_orderDetailSuitStatus"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_listOrderDetailSuitCode"
+        android:text="Order Status"
+        />
+
+    <TextView
+        android:id="@+id/textView_listOrderDetailSuitStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myred"
+        android:layout_below="@+id/textView_listOrderDetailSuitCode"
+        android:layout_toRightOf="@+id/tv_listOrderDetailSuitCode"
+        android:text="order Status"
+        />
+
+    <TextView
+        android:id="@+id/tv_listOrderDetailCity"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_listOrderDetailSuitStatus"
+        android:text="Order Date"
+        />
+
+    <TextView
+        android:id="@+id/textView_listOrderDetailDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_listOrderDetailSuitStatus"
+        android:layout_toRightOf="@+id/tv_listOrderDetailCity"
+        android:text="Order Date"
+        />
+
+    <TextView
+        android:id="@+id/tv_listStaffName"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_listOrderDetailCity"
+        android:text="Merchandizer"
+        />
+    <TextView
+        android:id="@+id/textView_listOrderDetailStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_listStaffName"
+        android:layout_below="@+id/tv_listOrderDetailCity"
+        android:text="Merchandizer"
+        />
+
+</RelativeLayout>

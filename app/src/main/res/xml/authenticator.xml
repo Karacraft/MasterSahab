@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="@string/accountType"
+    android:icon="@drawable/akms_icon_invert"
+    android:smallIcon="@drawable/akms_icon_invert"
+    android:label="@string/lable"/>
+
+    <!-- android:accountPreferences="@xml/authenticator_preferences" -->

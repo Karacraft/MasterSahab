@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id="@+id/textView_loginUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myorange"
+        android:padding="10dp"
+        android:text="@string/login_username" />
+
+    <EditText
+        style="@style/MyCustomTextBox2"
+        android:id="@+id/editText_loginUserName"
+        android:hint="@string/login_username_hint"
+        android:layout_below="@id/textView_loginUserName"
+        />
+    <TextView
+        android:id="@+id/textView_loginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myorange"
+        android:padding="10dp"
+        android:layout_below="@id/editText_loginUserName"
+        android:text="@string/login_password"
+        />
+
+    <EditText
+        style="@style/MyCustomTextBox2"
+        android:id="@+id/editText_loginPassword"
+        android:inputType="textPassword"
+        android:hint="@string/login_password_hint"
+        android:layout_below="@id/textView_loginPassword"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editText_loginPassword"
+        android:id="@+id/layout_linear_user_login"
+        >
+        <Button
+            style="@style/MyButton.BloodRed"
+            android:id="@+id/button_loginCancel"
+            android:text="@string/login_button_cancel"
+            android:layout_weight="1"
+                     />
+        <Button
+            android:id="@+id/button_loginPost"
+            android:text="@string/login_button_text"
+            style="@style/MyButton.BloodRed"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView_login_info"
+        android:layout_below="@+id/layout_linear_user_login"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

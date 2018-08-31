@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.karacraft.data.Orders_ListActivity">
+
+    <ImageView
+        android:id="@+id/imageView_listMercImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/akms_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/textView_listItemCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/mygreen"
+        android:text="Card Number"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageView_listMercImage"
+        />
+
+    <TextView
+        android:id="@+id/textView_listItemMercDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@color/mywhite"
+        android:layout_below="@+id/textView_listItemCardNumber"
+        android:layout_toRightOf="@id/imageView_listMercImage"
+        />
+
+    <TextView
+        android:id="@+id/textView_listItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textColor="@color/myorange"
+        android:layout_below="@+id/textView_listItemMercDate"
+        android:layout_toRightOf="@id/imageView_listMercImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_mercImageTemp"
+        />
+</RelativeLayout>

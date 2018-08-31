@@ -1,0 +1,58 @@
+About Application
+==================
+Merchandise Button (Splash > Dashboard > Merchandise
+==================
+When Called from Dashboard
+    it should display the merchandise list with
+    Add Button (menu)
+    Context Aciton Menu (Edit & Delete)
+
+    WORKING AS EXPECTED
+
+When Called from Dashboard > Tailor > Tailor List > Tailor Details > View Merchandise
+    it shouldn't display the Add Button (menu)
+    it shouldn't allow to Edit or Delete
+
+    WORKING AS EXPECTED
+
+================
+Tailor Button (Splash > Dashboard > Tailors)
+================
+When Called from Dashboard
+    it should display the Tailors List
+    list should be clickable to navigate to Tailors Details
+    No Add Button (We aren't adding Tailors right now)
+    No Edit Button (possible in future to update)
+    Show Picture thumbnail, if any (Nothing currently)
+
+    WORKING AS EXPECTED
+
+When Called from MercFragment (Merchandise Item)
+    Show only the list, which doesn't allow going to Tailor Details
+
+    WORKING AS EXPECTED
+
+
+================
+Orders Button (Splash > Dashboard > Orders)
+================
+When Called form Dashboard
+    Show the list of all Pending Orders
+    Add Menu (Must Be working) Takes user to Add Order Page
+    Should have Context Action Bar for Edit & Delete (Only 1 Selectable)
+    //Show Order Details when an Item in list is clicked
+When Called from Tailors (Dashboard > Tailors > Tailors Details)
+    Archive menu should show only Archive Orders of Selected Tailor (NO Edit)
+    Pending menu should show only Pending orders of Selected Tailor (No EDIT - Future USe)
+    NO Conext Action Bar
+
+    Add Order should auto select data for tailor.
+
+
+=============
+Colors
+=============
+Green       Card Number
+Orange      Tailor Name, Tailor id,
+WHITE       Shop name/Important
+RED         price

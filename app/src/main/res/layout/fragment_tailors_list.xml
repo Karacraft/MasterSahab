@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_search_holo_dark"
+        android:id="@+id/imageView_searchIcon"
+        />
+    <EditText
+        android:layout_toRightOf="@id/imageView_searchIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tailors_list_hint"
+        android:textColor="@color/myorange"
+        android:id="@+id/editText_tailorsListSearchFilter"
+        android:singleLine="true"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:layout_below="@id/editText_tailorsListSearchFilter"
+        android:divider="@color/mygray"
+        android:dividerHeight="2px"
+        >
+    </ListView>
+
+    <!-- Here is the view to show if the list is empty -->
+    <TextView android:id="@android:id/empty"
+              android:padding="@dimen/activity_horizontal_margin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textAlignment="center"
+              android:gravity="center"
+              android:layout_below="@id/editText_tailorsListSearchFilter"
+              android:textAppearance="@android:style/TextAppearance.Large"
+              android:text="@string/list_item_tailor_empty" />
+
+</RelativeLayout>

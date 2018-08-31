@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="myorange">#FFCC00</color>
+    <color name="mygreen">#009900</color>
+    <color name="myblack">#000000</color>
+    <color name="mywhite">#ffffff</color>
+    <color name="myred">#CC0000</color>
+    <color name="mygray">#808080</color>
+    <color name="bloodreddark">#E50914</color>
+    <color name="bloodredlight">#ED1C16</color>
+    <color name="bloodredstroke">#FF3300</color>
+
+    <!-- app/src/main/res/values/colors.xml -->
+    <color name="darkColorPrimary">#ffeb3b</color>
+    <color name="darkColorPrimaryDark">#141831</color>
+    <color name="darkColorAccent">#6200ea</color>
+</resources>

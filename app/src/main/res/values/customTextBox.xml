@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyCustomTextBox1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#006633</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:background">#f0f0f0</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="MyCustomTextBox2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#11197c</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/text_start_box</item>
+    </style>
+
+    <style name="MyCustomTextBox1.RedText">
+        <item name="android:textColor">#8a0000</item>
+        <item name="android:background">#bc8e56</item>
+    </style>
+</resources>

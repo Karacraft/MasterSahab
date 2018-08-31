@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+        <ImageView
+            android:id="@+id/imageView_listTailorImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/akms_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/textView_listTailorName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_item_tailor_name"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/myorange"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView_listTailorImage"
+             />
+
+
+        <TextView
+            android:id="@+id/textView_listTailorContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_item_tailor_contact"
+            android:layout_below="@+id/textView_listTailorName"
+            android:layout_toRightOf="@+id/imageView_listTailorImage"
+            />
+
+        <TextView
+            android:id="@+id/textView_listTailorShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_item_tailor_shop"
+            android:textColor="@color/mywhite"
+            android:layout_below="@+id/textView_listTailorContact"
+            android:layout_toRightOf="@id/imageView_listTailorImage"
+            />
+
+        <TextView
+            android:id="@+id/textView_listTailorCardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_item_tailor_cardnumber"
+            android:textColor="@color/mygreen"
+            android:layout_below="@+id/textView_listTailorShopName"
+            android:layout_toRightOf="@id/imageView_listTailorImage"
+            />
+
+</RelativeLayout>
+

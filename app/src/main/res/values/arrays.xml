@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="suit_qty">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="order_status">
+        <item>Pending</item>
+        <item>Archive</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="merchandising_items">
+        <item>Poster</item>
+        <item>Buntings</item>
+        <item>Banner</item>
+        <item>Catalog Holder</item>
+        <item>Counter Top</item>
+        <item>Availability Sign</item>
+        <item>Welcome Sign</item>
+        <item>Catalog</item>
+        <item>Fascia</item>
+        <item>Tools Box</item>
+    </string-array>
+
+</resources>

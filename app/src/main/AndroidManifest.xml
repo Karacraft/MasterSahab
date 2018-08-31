@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.karacraft.mastersahab">
+
+    <uses-sdk android:minSdkVersion="17"
+              android:targetSdkVersion="22" />
+
+    <!-- Required by Authenticator -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <!-- Required by SyncAdapter -->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".ActivitySplash"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activity"
+            />
+        <activity
+            android:name=".TailorsListActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activity"
+            />
+        <activity
+            android:name=".OrdersListActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activity"
+            />
+        <activity
+            android:name=".SuitsListActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activity"
+            />
+        <activity
+            android:name=".OrderAddEditActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".MercListActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activity"
+            />
+        <activity
+            android:name=".TailorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".OrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MercActivity"
+            android:screenOrientation="portrait"/>
+        <!-- New Login Activity -->
+        <activity
+            android:name=".UserLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CameraActivity"
+            android:screenOrientation="landscape"/>
+
+        <!--  This Completes the Showing of Service in Android Accounts -->
+        <service android:name="com.karacraft.security.AuthenticatorService">
+
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+
+            <meta-data android:name="android.accounts.AccountAuthenticator"
+                       android:resource="@xml/authenticator"
+                />
+        </service>
+        <!--  SyncService -->
+        <service
+            android:name="com.karacraft.security.SyncService"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter"
+                       android:resource="@xml/syncadapter" />
+        </service>
+        <!--    Content Provider -->
+        <provider
+            android:authorities="com.karacraft.security.mastersahab"
+            android:name="com.karacraft.security.MasterSahabProvider"
+            android:exported="true"
+            android:syncable="true"/>
+
+    </application>
+
+</manifest>
